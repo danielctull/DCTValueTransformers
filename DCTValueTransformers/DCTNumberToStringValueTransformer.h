@@ -1,13 +1,13 @@
 //
-//  DCTValueTransformers.m
+//  DCTNumberToStringValueTransformer.h
 //  DCTValueTransformers
 //
 //  Created by Daniel Tull on 12/11/2012.
 //  Copyright (c) 2012 Daniel Tull. All rights reserved.
 //
 
-#import "DCTValueTransformers.h"
+#import <Foundation/Foundation.h>
 
-@implementation DCTValueTransformers
+@interface DCTNumberToStringValueTransformer : NSValueTransformer
 
 @end
