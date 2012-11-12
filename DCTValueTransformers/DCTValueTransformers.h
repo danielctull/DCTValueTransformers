@@ -7,7 +7,6 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "NSValueTransformer+DCTValueTransformers.h"
 #import "DCTStringToNumberValueTransformer.h"
 #import "DCTNumberToStringValueTransformer.h"
 #import "DCTISO8601ToDateValueTransformer.h"

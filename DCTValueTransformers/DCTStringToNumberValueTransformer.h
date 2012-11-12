@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "NSValueTransformer+DCTValueTransformers.h"
 
 @interface DCTStringToNumberValueTransformer : NSValueTransformer
-
 @end

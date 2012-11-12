@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "NSValueTransformer+DCTValueTransformers.h"
 
 @interface DCTISO8601ToDateValueTransformer : NSValueTransformer
-
 @end

@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "NSValueTransformer+DCTValueTransformers.h"
 
 @interface DCTNumberToStringValueTransformer : NSValueTransformer
-
 @end

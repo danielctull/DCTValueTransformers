@@ -7,7 +7,25 @@
 //
 
 #import "DCTNumberToStringValueTransformer.h"
+#import "DCTStringToNumberValueTransformer.h"
 
 @implementation DCTNumberToStringValueTransformer
+
++ (Class)transformedValueClass {
+	return [NSString class];
+}
+
++ (BOOL)allowsReverseTransformation {
+	return YES;
+}
+
+- (id)transformedValue:(NSNumber *)value {
+	return [value description];
+}
+
+- (id)reverseTransformedValue:(id)value {
+	DCTStringToNumberValueTransformer *transformer = [DCTStringToNumberValueTransformer dct_transformer];
+	return [transformer transformedValue:value];
+}
 
 @end
