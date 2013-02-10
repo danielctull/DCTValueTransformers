@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2463FE4416C7D4FD0094A7A7 /* DCTStringToNumberValueTransformer.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 24B0AAC01650E566005D0D60 /* DCTStringToNumberValueTransformer.h */; };
+		2463FE4516C7D4FD0094A7A7 /* DCTNumberToStringValueTransformer.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 24B0AAC31650E578005D0D60 /* DCTNumberToStringValueTransformer.h */; };
+		2463FE4616C7D4FD0094A7A7 /* DCTISO8601ToDateValueTransformer.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 24B0AAC61650E597005D0D60 /* DCTISO8601ToDateValueTransformer.h */; };
+		2463FE4716C7D4FD0094A7A7 /* DCTTimeIntervalSince1970ToDateValueTransformer.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 24B0AAC91650E5E1005D0D60 /* DCTTimeIntervalSince1970ToDateValueTransformer.h */; };
+		2463FE4816C7D4FD0094A7A7 /* NSValueTransformer+DCTValueTransformers.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 24B0AACC1650E6B9005D0D60 /* NSValueTransformer+DCTValueTransformers.h */; };
 		24B0AAB31650E524005D0D60 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24B0AAB21650E524005D0D60 /* Foundation.framework */; };
 		24B0AAB81650E524005D0D60 /* DCTValueTransformers.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 24B0AAB71650E524005D0D60 /* DCTValueTransformers.h */; };
 		24B0AAC21650E566005D0D60 /* DCTStringToNumberValueTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 24B0AAC11650E566005D0D60 /* DCTStringToNumberValueTransformer.m */; };
@@ -23,6 +28,11 @@
 			dstPath = "include/${PRODUCT_NAME}";
 			dstSubfolderSpec = 16;
 			files = (
+				2463FE4416C7D4FD0094A7A7 /* DCTStringToNumberValueTransformer.h in CopyFiles */,
+				2463FE4516C7D4FD0094A7A7 /* DCTNumberToStringValueTransformer.h in CopyFiles */,
+				2463FE4616C7D4FD0094A7A7 /* DCTISO8601ToDateValueTransformer.h in CopyFiles */,
+				2463FE4716C7D4FD0094A7A7 /* DCTTimeIntervalSince1970ToDateValueTransformer.h in CopyFiles */,
+				2463FE4816C7D4FD0094A7A7 /* NSValueTransformer+DCTValueTransformers.h in CopyFiles */,
 				24B0AAB81650E524005D0D60 /* DCTValueTransformers.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -250,6 +260,7 @@
 				24B0AABF1650E524005D0D60 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
