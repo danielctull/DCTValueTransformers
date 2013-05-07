@@ -29,10 +29,12 @@
 }
 
 - (id)transformedValue:(NSString *)value {
+	if (!value) return nil;
 	return [[[self class] dateFormatter] dateFromString:value];
 }
 
 - (id)reverseTransformedValue:(NSDate *)value {
+	if (!value) return nil;
 	return [[[self class] dateFormatter] stringFromDate:value];
 }
 
