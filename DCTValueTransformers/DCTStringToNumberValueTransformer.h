@@ -6,7 +6,7 @@
 //  Copyright (c) 2012 Daniel Tull. All rights reserved.
 //
 
-@import Foundation;
+#import <Foundation/Foundation.h>
 #import "NSValueTransformer+DCTValueTransformers.h"
 
 @interface DCTStringToNumberValueTransformer : NSValueTransformer
