@@ -40,6 +40,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		240BE44817ED80FE007AB802 /* Universal.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Universal.xcconfig; sourceTree = "<group>"; };
 		24B0AAAF1650E524005D0D60 /* libDCTValueTransformers.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libDCTValueTransformers.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		24B0AAB21650E524005D0D60 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		24B0AAB71650E524005D0D60 /* DCTValueTransformers.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DCTValueTransformers.h; sourceTree = "<group>"; };
@@ -70,6 +71,7 @@
 		24B0AAA41650E524005D0D60 = {
 			isa = PBXGroup;
 			children = (
+				240BE44817ED80FE007AB802 /* Universal.xcconfig */,
 				24B0AAB41650E524005D0D60 /* DCTValueTransformers */,
 				24B0AAB11650E524005D0D60 /* Frameworks */,
 				24B0AAB01650E524005D0D60 /* Products */,
@@ -225,25 +227,23 @@
 		};
 		24B0AABE1650E524005D0D60 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 240BE44817ED80FE007AB802 /* Universal.xcconfig */;
 			buildSettings = {
 				DSTROOT = /tmp/DCTValueTransformers.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos macosx";
-				VALID_ARCHS = "armv7 armv7s i386 x86_64";
 			};
 			name = Debug;
 		};
 		24B0AABF1650E524005D0D60 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 240BE44817ED80FE007AB802 /* Universal.xcconfig */;
 			buildSettings = {
 				DSTROOT = /tmp/DCTValueTransformers.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos macosx";
-				VALID_ARCHS = "armv7 armv7s i386 x86_64";
 			};
 			name = Release;
 		};
