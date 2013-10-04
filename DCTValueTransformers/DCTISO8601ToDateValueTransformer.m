@@ -7,16 +7,15 @@
 //
 
 #import "DCTISO8601ToDateValueTransformer.h"
+#import "ISO8601DateFormatter.h"
 
 @implementation DCTISO8601ToDateValueTransformer
 
-+ (NSDateFormatter *)dateFormatter {
-	static NSDateFormatter *dateFormatter;
-	static dispatch_once_t dateFormatterToken;
-	dispatch_once(&dateFormatterToken, ^{
-		dateFormatter = [[NSDateFormatter alloc] init];
-		dateFormatter.locale = [[NSLocale alloc] initWithLocaleIdentifier:@"en_US"];
-		[dateFormatter setDateFormat:@"yyyy-MM-dd'T'HH:mm:ssZZZ"];
++ (ISO8601DateFormatter *)dateFormatter {
+	static ISO8601DateFormatter *dateFormatter;
+	static dispatch_once_t onceToken;
+	dispatch_once(&onceToken, ^{
+		dateFormatter = [ISO8601DateFormatter new];
 	});
 	return dateFormatter;
 }
@@ -30,12 +29,13 @@
 }
 
 - (id)transformedValue:(NSString *)value {
+	if (!value || [value isKindOfClass:[NSNull class]]) return nil;
 	return [[[self class] dateFormatter] dateFromString:value];
-
 }
 
-- (id)reverseTransformedValue:(id)value {
-    return [[[self class] dateFormatter] stringFromDate:value];
+- (id)reverseTransformedValue:(NSDate *)value {
+	if (!value || [value isKindOfClass:[NSNull class]]) return nil;
+	return [[[self class] dateFormatter] stringFromDate:value];
 }
 
 @end
