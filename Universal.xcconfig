@@ -5,12 +5,12 @@
 //  Copyright (c) 2013 Daniel Tull. All rights reserved.
 //
 
-SUPPORTED_PLATFORMS = iphonesimulator iphoneos macosx;
-
-ARCHS[sdk=iphoneos*] = $(ARCHS_STANDARD);
-ARCHS[sdk=iphonesimulator*] = $(ARCHS_STANDARD);
+ARCHS[sdk=iphoneos*] = $(ARCHS_STANDARD_INCLUDING_64_BIT);
+ARCHS[sdk=iphonesimulator*] = $(ARCHS_STANDARD_INCLUDING_64_BIT);
 ARCHS[sdk=macosx*] = $(ARCHS_STANDARD_64_BIT);
 
-VALID_ARCHS[sdk=iphoneos*] = $(ARCHS_STANDARD);
-VALID_ARCHS[sdk=iphonesimulator*] = $(ARCHS_STANDARD);
+SUPPORTED_PLATFORMS = iphonesimulator iphoneos macosx;
+
+VALID_ARCHS[sdk=iphoneos*] = $(ARCHS_STANDARD_INCLUDING_64_BIT);
+VALID_ARCHS[sdk=iphonesimulator*] = $(ARCHS_STANDARD_INCLUDING_64_BIT);
 VALID_ARCHS[sdk=macosx*] = $(ARCHS_STANDARD_64_BIT);
