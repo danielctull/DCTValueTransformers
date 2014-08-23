@@ -6,7 +6,7 @@
 //  Copyright (c) 2012 Daniel Tull. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+@import Foundation;
 #import "NSValueTransformer+DCTValueTransformers.h"
 
 @interface DCTTimeIntervalSince1970ToDateValueTransformer : NSValueTransformer
