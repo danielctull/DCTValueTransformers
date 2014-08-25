@@ -6,7 +6,7 @@
 //  Copyright (c) 2012 Daniel Tull. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+@import Foundation;
 #import "DCTStringToNumberValueTransformer.h"
 #import "DCTNumberToStringValueTransformer.h"
 #import "DCTISO8601ToDateValueTransformer.h"
