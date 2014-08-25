@@ -7,7 +7,10 @@
 //
 
 #import "DCTISO8601ToDateValueTransformer.h"
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wauto-import"
 #import "ISO8601DateFormatter.h"
+#pragma clang diagnostic pop
 
 @implementation DCTISO8601ToDateValueTransformer
 
