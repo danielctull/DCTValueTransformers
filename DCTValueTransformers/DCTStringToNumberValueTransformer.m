@@ -19,7 +19,11 @@
 	return YES;
 }
 
-- (id)transformedValue:(NSString *)value {
+- (id)transformedValue:(id)value {
+
+	if (![value isKindOfClass:[NSString class]]) {
+		return value;
+	}
 
 	static NSNumberFormatter *numberFormatter;
 	static dispatch_once_t onceToken;

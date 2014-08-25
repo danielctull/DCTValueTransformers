@@ -20,15 +20,16 @@
 	return YES;
 }
 
-- (id)transformedValue:(NSNumber *)value {
+- (id)transformedValue:(id)value {
 
 	if ([value isKindOfClass:[NSString class]]) {
 		DCTStringToNumberValueTransformer *transformer = [DCTStringToNumberValueTransformer dct_transformer];
 		value = [transformer transformedValue:value];
 	}
 
-	if (![value isKindOfClass:[NSNumber class]])
+	if (![value isKindOfClass:[NSNumber class]]) {
 		return nil;
+	}
 
 	return [NSDate dateWithTimeIntervalSince1970:[value doubleValue]];
 

@@ -18,11 +18,21 @@
 	return YES;
 }
 
-- (id)transformedValue:(NSArray *)value {
+- (id)transformedValue:(id)value {
+
+	if (![value isKindOfClass:[NSArray class]]) {
+		return value;
+	}
+
 	return [value componentsJoinedByString:@","];
 }
 
-- (id)reverseTransformedValue:(NSString *)value {
+- (id)reverseTransformedValue:(id)value {
+
+	if (![value isKindOfClass:[NSString class]]) {
+		return value;
+	}
+
 	return [value componentsSeparatedByString:@","];
 }
 

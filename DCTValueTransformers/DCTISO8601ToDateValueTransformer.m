@@ -28,13 +28,21 @@
 	return YES;
 }
 
-- (id)transformedValue:(NSString *)value {
-	if (!value || [value isKindOfClass:[NSNull class]]) return nil;
+- (id)transformedValue:(id)value {
+
+	if (![value isKindOfClass:[NSString class]]) {
+		return nil;
+	}
+
 	return [[[self class] dateFormatter] dateFromString:value];
 }
 
-- (id)reverseTransformedValue:(NSDate *)value {
-	if (!value || [value isKindOfClass:[NSNull class]]) return nil;
+- (id)reverseTransformedValue:(id)value {
+
+	if (![value isKindOfClass:[NSDate class]]) {
+		return nil;
+	}
+
 	return [[[self class] dateFormatter] stringFromDate:value];
 }
 

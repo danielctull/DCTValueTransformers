@@ -293,7 +293,7 @@
 		24B0AAA61650E524005D0D60 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0500;
+				LastUpgradeCheck = 0600;
 				ORGANIZATIONNAME = "Daniel Tull";
 				TargetAttributes = {
 					246E129D19A93F4600780D49 = {
@@ -468,6 +468,7 @@
 				246E12B019A93F4700780D49 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		246E12C919A93F6300780D49 /* Build configuration list for PBXNativeTarget "DCTValueTransformers OS X" */ = {
 			isa = XCConfigurationList;
@@ -476,6 +477,7 @@
 				246E12CB19A93F6300780D49 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		24B0AAA91650E524005D0D60 /* Build configuration list for PBXProject "DCTValueTransformers" */ = {
 			isa = XCConfigurationList;

@@ -19,7 +19,12 @@
 	return YES;
 }
 
-- (id)transformedValue:(NSNumber *)value {
+- (id)transformedValue:(id)value {
+
+	if (![value isKindOfClass:[NSNumber class]]) {
+		return value;
+	}
+
 	return [value description];
 }
 
