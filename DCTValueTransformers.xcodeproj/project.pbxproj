@@ -52,6 +52,11 @@
 		24B0AACE1650E6B9005D0D60 /* NSValueTransformer+DCTValueTransformers.m in Sources */ = {isa = PBXBuildFile; fileRef = 24B0AACD1650E6B9005D0D60 /* NSValueTransformer+DCTValueTransformers.m */; };
 		24C54C5C16BFFD9D00E0ACA6 /* DCTArrayToStringValueTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 24C54C5B16BFFD9D00E0ACA6 /* DCTArrayToStringValueTransformer.m */; };
 		24C54C5E16BFFE1400E0ACA6 /* DCTArrayToStringValueTransformer.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 24C54C5A16BFFD9D00E0ACA6 /* DCTArrayToStringValueTransformer.h */; };
+		24F16B3A1B4FCD6E00F0589B /* DCTBooleanNotValueTransformer.h in Headers */ = {isa = PBXBuildFile; fileRef = 24F16B381B4FCD6E00F0589B /* DCTBooleanNotValueTransformer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		24F16B3B1B4FCD6E00F0589B /* DCTBooleanNotValueTransformer.h in Headers */ = {isa = PBXBuildFile; fileRef = 24F16B381B4FCD6E00F0589B /* DCTBooleanNotValueTransformer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		24F16B3C1B4FCD6E00F0589B /* DCTBooleanNotValueTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 24F16B391B4FCD6E00F0589B /* DCTBooleanNotValueTransformer.m */; };
+		24F16B3D1B4FCD6E00F0589B /* DCTBooleanNotValueTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 24F16B391B4FCD6E00F0589B /* DCTBooleanNotValueTransformer.m */; };
+		24F16B3E1B4FCD6E00F0589B /* DCTBooleanNotValueTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 24F16B391B4FCD6E00F0589B /* DCTBooleanNotValueTransformer.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -112,6 +117,8 @@
 		24B0AACD1650E6B9005D0D60 /* NSValueTransformer+DCTValueTransformers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSValueTransformer+DCTValueTransformers.m"; sourceTree = "<group>"; };
 		24C54C5A16BFFD9D00E0ACA6 /* DCTArrayToStringValueTransformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCTArrayToStringValueTransformer.h; sourceTree = "<group>"; };
 		24C54C5B16BFFD9D00E0ACA6 /* DCTArrayToStringValueTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCTArrayToStringValueTransformer.m; sourceTree = "<group>"; };
+		24F16B381B4FCD6E00F0589B /* DCTBooleanNotValueTransformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCTBooleanNotValueTransformer.h; sourceTree = "<group>"; };
+		24F16B391B4FCD6E00F0589B /* DCTBooleanNotValueTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCTBooleanNotValueTransformer.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -182,6 +189,8 @@
 				24B0AAC11650E566005D0D60 /* DCTStringToNumberValueTransformer.m */,
 				24C54C5A16BFFD9D00E0ACA6 /* DCTArrayToStringValueTransformer.h */,
 				24C54C5B16BFFD9D00E0ACA6 /* DCTArrayToStringValueTransformer.m */,
+				24F16B381B4FCD6E00F0589B /* DCTBooleanNotValueTransformer.h */,
+				24F16B391B4FCD6E00F0589B /* DCTBooleanNotValueTransformer.m */,
 				24B0AAC31650E578005D0D60 /* DCTNumberToStringValueTransformer.h */,
 				24B0AAC41650E578005D0D60 /* DCTNumberToStringValueTransformer.m */,
 				24B0AAC61650E597005D0D60 /* DCTISO8601ToDateValueTransformer.h */,
@@ -209,6 +218,7 @@
 				246E12E019A93FE800780D49 /* DCTArrayToStringValueTransformer.h in Headers */,
 				246E12E119A93FE800780D49 /* DCTNumberToStringValueTransformer.h in Headers */,
 				246E12E219A93FE800780D49 /* DCTISO8601ToDateValueTransformer.h in Headers */,
+				24F16B3A1B4FCD6E00F0589B /* DCTBooleanNotValueTransformer.h in Headers */,
 				246E12E319A93FE800780D49 /* DCTTimeIntervalSince1970ToDateValueTransformer.h in Headers */,
 				246E12E419A93FE900780D49 /* NSValueTransformer+DCTValueTransformers.h in Headers */,
 				246E12E519A93FE900780D49 /* ISO8601DateFormatter.h in Headers */,
@@ -223,6 +233,7 @@
 				246E12D719A93FC600780D49 /* DCTStringToNumberValueTransformer.h in Headers */,
 				246E12D819A93FC600780D49 /* DCTArrayToStringValueTransformer.h in Headers */,
 				246E12D919A93FC600780D49 /* DCTNumberToStringValueTransformer.h in Headers */,
+				24F16B3B1B4FCD6E00F0589B /* DCTBooleanNotValueTransformer.h in Headers */,
 				246E12DA19A93FC600780D49 /* DCTISO8601ToDateValueTransformer.h in Headers */,
 				246E12DB19A93FC600780D49 /* DCTTimeIntervalSince1970ToDateValueTransformer.h in Headers */,
 				246E12DC19A93FC600780D49 /* NSValueTransformer+DCTValueTransformers.h in Headers */,
@@ -351,6 +362,7 @@
 				246E12E919A93FF400780D49 /* DCTISO8601ToDateValueTransformer.m in Sources */,
 				246E12EA19A93FF400780D49 /* DCTTimeIntervalSince1970ToDateValueTransformer.m in Sources */,
 				246E12EB19A93FF400780D49 /* NSValueTransformer+DCTValueTransformers.m in Sources */,
+				24F16B3D1B4FCD6E00F0589B /* DCTBooleanNotValueTransformer.m in Sources */,
 				246E12EC19A93FF400780D49 /* ISO8601DateFormatter.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -365,6 +377,7 @@
 				246E12D219A93FBA00780D49 /* DCTISO8601ToDateValueTransformer.m in Sources */,
 				246E12D319A93FBA00780D49 /* DCTTimeIntervalSince1970ToDateValueTransformer.m in Sources */,
 				246E12D419A93FBA00780D49 /* NSValueTransformer+DCTValueTransformers.m in Sources */,
+				24F16B3E1B4FCD6E00F0589B /* DCTBooleanNotValueTransformer.m in Sources */,
 				246E12D519A93FBA00780D49 /* ISO8601DateFormatter.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -379,6 +392,7 @@
 				24B0AACB1650E5E1005D0D60 /* DCTTimeIntervalSince1970ToDateValueTransformer.m in Sources */,
 				24B0AACE1650E6B9005D0D60 /* NSValueTransformer+DCTValueTransformers.m in Sources */,
 				24C54C5C16BFFD9D00E0ACA6 /* DCTArrayToStringValueTransformer.m in Sources */,
+				24F16B3C1B4FCD6E00F0589B /* DCTBooleanNotValueTransformer.m in Sources */,
 				246F9A1A1738EA750045C5C3 /* ISO8601DateFormatter.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

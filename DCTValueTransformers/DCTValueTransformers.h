@@ -12,3 +12,4 @@
 #import "DCTISO8601ToDateValueTransformer.h"
 #import "DCTTimeIntervalSince1970ToDateValueTransformer.h"
 #import "DCTArrayToStringValueTransformer.h"
+#import "DCTBooleanNotValueTransformer.h"
