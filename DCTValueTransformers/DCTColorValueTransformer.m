@@ -23,8 +23,12 @@ typedef NSColor DCTColorValueTransformerColor;
 
 	if (![value isKindOfClass:[NSString class]]) return nil;
 
-	NSScanner *scanner = [NSScanner scannerWithString:value];
-	[scanner setCharactersToBeSkipped:[NSCharacterSet symbolCharacterSet]];
+	NSCharacterSet *allowedCharacters = [NSCharacterSet characterSetWithCharactersInString:@"0123456789abcdefABCDEF"];
+	NSString *string = [[value componentsSeparatedByCharactersInSet:allowedCharacters.invertedSet] componentsJoinedByString:@""];
+
+	if (string.length != 6) return nil;
+
+	NSScanner *scanner = [NSScanner scannerWithString:string];
 
 	unsigned int color;
 	[scanner scanHexInt:&color];
