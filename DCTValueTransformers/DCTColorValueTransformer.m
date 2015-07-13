@@ -26,9 +26,16 @@ typedef NSColor DCTColorValueTransformerColor;
 	NSCharacterSet *allowedCharacters = [NSCharacterSet characterSetWithCharactersInString:@"0123456789abcdefABCDEF"];
 	NSString *string = [[value componentsSeparatedByCharactersInSet:allowedCharacters.invertedSet] componentsJoinedByString:@""];
 
-	if (string.length != 6) return nil;
+	if (string.length == 6) {
+		return [self colorFromHexString:string];
+	}
 
-	NSScanner *scanner = [NSScanner scannerWithString:string];
+	return [self colorFromName:value];
+}
+
+- (DCTColorValueTransformerColor *)colorFromHexString:(NSString *)hexString {
+
+	NSScanner *scanner = [NSScanner scannerWithString:hexString];
 
 	unsigned int color;
 	[scanner scanHexInt:&color];
@@ -38,6 +45,30 @@ typedef NSColor DCTColorValueTransformerColor;
 	CGFloat blue = (color & 0x0000FF) / 255.0f;
 
 	return [DCTColorValueTransformerColor colorWithRed:red green:green blue:blue alpha:1.0];
+}
+
+- (DCTColorValueTransformerColor *)colorFromName:(NSString *)colorName {
+
+	NSDictionary *translations = @{
+		@"grey" : @"gray"
+	};
+
+	if ([translations.allKeys containsObject:colorName]) {
+		colorName = translations[colorName];
+	}
+
+	NSString *selectorName = [colorName stringByAppendingString:@"Color"];
+	SEL colorSelector = NSSelectorFromString(selectorName);
+
+	if (![DCTColorValueTransformerColor respondsToSelector:colorSelector]) {
+		return nil;
+	}
+
+#if TARGET_OS_IPHONE
+	return [UIColor performSelector:colorSelector];
+#else
+	return [NSColor performSelector:colorSelector];
+#endif
 }
 
 @end
