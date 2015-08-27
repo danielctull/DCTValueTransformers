@@ -319,7 +319,7 @@
 		24B0AAA61650E524005D0D60 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0610;
+				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = "Daniel Tull";
 				TargetAttributes = {
 					246E129D19A93F4600780D49 = {
@@ -467,6 +467,7 @@
 			baseConfigurationReference = 246E129019A93EDD00780D49 /* Debug.xcconfig */;
 			buildSettings = {
 				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "uk.co.danieltull.$(PRODUCT_NAME:rfc1034identifier)";
 			};
 			name = Debug;
 		};
@@ -474,6 +475,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 246E129719A93EDD00780D49 /* Release.xcconfig */;
 			buildSettings = {
+				PRODUCT_BUNDLE_IDENTIFIER = "uk.co.danieltull.$(PRODUCT_NAME:rfc1034identifier)";
 			};
 			name = Release;
 		};
