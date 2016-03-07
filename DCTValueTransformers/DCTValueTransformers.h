@@ -14,3 +14,4 @@
 #import "DCTArrayToStringValueTransformer.h"
 #import "DCTBooleanNotValueTransformer.h"
 #import "DCTColorValueTransformer.h"
+#import "DCTStringToURLValueTransformer.h"
