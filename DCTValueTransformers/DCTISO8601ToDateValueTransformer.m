@@ -8,6 +8,7 @@
 
 #import "DCTISO8601ToDateValueTransformer.h"
 #pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wobjc-interface-ivars"
 #pragma clang diagnostic ignored "-Wauto-import"
 #import "ISO8601DateFormatter.h"
 #pragma clang diagnostic pop
