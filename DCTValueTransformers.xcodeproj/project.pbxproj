@@ -26,7 +26,7 @@
 		246E12DA19A93FC600780D49 /* DCTISO8601ToDateValueTransformer.h in Headers */ = {isa = PBXBuildFile; fileRef = 24B0AAC61650E597005D0D60 /* DCTISO8601ToDateValueTransformer.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		246E12DB19A93FC600780D49 /* DCTTimeIntervalSince1970ToDateValueTransformer.h in Headers */ = {isa = PBXBuildFile; fileRef = 24B0AAC91650E5E1005D0D60 /* DCTTimeIntervalSince1970ToDateValueTransformer.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		246E12DC19A93FC600780D49 /* NSValueTransformer+DCTValueTransformers.h in Headers */ = {isa = PBXBuildFile; fileRef = 24B0AACC1650E6B9005D0D60 /* NSValueTransformer+DCTValueTransformers.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		246E12DD19A93FC600780D49 /* ISO8601DateFormatter.h in Headers */ = {isa = PBXBuildFile; fileRef = 246F9A181738EA750045C5C3 /* ISO8601DateFormatter.h */; };
+		246E12DD19A93FC600780D49 /* ISO8601DateFormatter.h in Headers */ = {isa = PBXBuildFile; fileRef = 246F9A181738EA750045C5C3 /* ISO8601DateFormatter.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		246E12DE19A93FE800780D49 /* DCTValueTransformers.h in Headers */ = {isa = PBXBuildFile; fileRef = 24B0AAB71650E524005D0D60 /* DCTValueTransformers.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		246E12DF19A93FE800780D49 /* DCTStringToNumberValueTransformer.h in Headers */ = {isa = PBXBuildFile; fileRef = 24B0AAC01650E566005D0D60 /* DCTStringToNumberValueTransformer.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		246E12E019A93FE800780D49 /* DCTArrayToStringValueTransformer.h in Headers */ = {isa = PBXBuildFile; fileRef = 24C54C5A16BFFD9D00E0ACA6 /* DCTArrayToStringValueTransformer.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -34,7 +34,7 @@
 		246E12E219A93FE800780D49 /* DCTISO8601ToDateValueTransformer.h in Headers */ = {isa = PBXBuildFile; fileRef = 24B0AAC61650E597005D0D60 /* DCTISO8601ToDateValueTransformer.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		246E12E319A93FE800780D49 /* DCTTimeIntervalSince1970ToDateValueTransformer.h in Headers */ = {isa = PBXBuildFile; fileRef = 24B0AAC91650E5E1005D0D60 /* DCTTimeIntervalSince1970ToDateValueTransformer.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		246E12E419A93FE900780D49 /* NSValueTransformer+DCTValueTransformers.h in Headers */ = {isa = PBXBuildFile; fileRef = 24B0AACC1650E6B9005D0D60 /* NSValueTransformer+DCTValueTransformers.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		246E12E519A93FE900780D49 /* ISO8601DateFormatter.h in Headers */ = {isa = PBXBuildFile; fileRef = 246F9A181738EA750045C5C3 /* ISO8601DateFormatter.h */; };
+		246E12E519A93FE900780D49 /* ISO8601DateFormatter.h in Headers */ = {isa = PBXBuildFile; fileRef = 246F9A181738EA750045C5C3 /* ISO8601DateFormatter.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		246E12E619A93FF400780D49 /* DCTStringToNumberValueTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 24B0AAC11650E566005D0D60 /* DCTStringToNumberValueTransformer.m */; };
 		246E12E719A93FF400780D49 /* DCTArrayToStringValueTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 24C54C5B16BFFD9D00E0ACA6 /* DCTArrayToStringValueTransformer.m */; };
 		246E12E819A93FF400780D49 /* DCTNumberToStringValueTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 24B0AAC41650E578005D0D60 /* DCTNumberToStringValueTransformer.m */; };
@@ -69,7 +69,7 @@
 		2473F35C1BC869800075EA00 /* DCTBooleanNotValueTransformer.h in Headers */ = {isa = PBXBuildFile; fileRef = 24F16B381B4FCD6E00F0589B /* DCTBooleanNotValueTransformer.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2473F35D1BC869800075EA00 /* DCTTimeIntervalSince1970ToDateValueTransformer.h in Headers */ = {isa = PBXBuildFile; fileRef = 24B0AAC91650E5E1005D0D60 /* DCTTimeIntervalSince1970ToDateValueTransformer.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2473F35E1BC869800075EA00 /* NSValueTransformer+DCTValueTransformers.h in Headers */ = {isa = PBXBuildFile; fileRef = 24B0AACC1650E6B9005D0D60 /* NSValueTransformer+DCTValueTransformers.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2473F35F1BC869800075EA00 /* ISO8601DateFormatter.h in Headers */ = {isa = PBXBuildFile; fileRef = 246F9A181738EA750045C5C3 /* ISO8601DateFormatter.h */; };
+		2473F35F1BC869800075EA00 /* ISO8601DateFormatter.h in Headers */ = {isa = PBXBuildFile; fileRef = 246F9A181738EA750045C5C3 /* ISO8601DateFormatter.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		24B0AAB81650E524005D0D60 /* DCTValueTransformers.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 24B0AAB71650E524005D0D60 /* DCTValueTransformers.h */; };
 		24B0AAC21650E566005D0D60 /* DCTStringToNumberValueTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 24B0AAC11650E566005D0D60 /* DCTStringToNumberValueTransformer.m */; };
 		24B0AAC51650E578005D0D60 /* DCTNumberToStringValueTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 24B0AAC41650E578005D0D60 /* DCTNumberToStringValueTransformer.m */; };
