@@ -7,6 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		244A42D31D9CF138009A622C /* DCTStringToNumberValueTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 24B0AAC11650E566005D0D60 /* DCTStringToNumberValueTransformer.m */; };
+		244A42D41D9CF138009A622C /* DCTArrayToStringValueTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 24C54C5B16BFFD9D00E0ACA6 /* DCTArrayToStringValueTransformer.m */; };
+		244A42D51D9CF138009A622C /* DCTNumberToStringValueTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 24B0AAC41650E578005D0D60 /* DCTNumberToStringValueTransformer.m */; };
+		244A42D61D9CF138009A622C /* DCTColorValueTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 24F16B411B4FD29500F0589B /* DCTColorValueTransformer.m */; };
+		244A42D71D9CF138009A622C /* DCTISO8601ToDateValueTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 24B0AAC71650E597005D0D60 /* DCTISO8601ToDateValueTransformer.m */; };
+		244A42D81D9CF138009A622C /* DCTTimeIntervalSince1970ToDateValueTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 24B0AACA1650E5E1005D0D60 /* DCTTimeIntervalSince1970ToDateValueTransformer.m */; };
+		244A42D91D9CF138009A622C /* NSValueTransformer+DCTValueTransformers.m in Sources */ = {isa = PBXBuildFile; fileRef = 24B0AACD1650E6B9005D0D60 /* NSValueTransformer+DCTValueTransformers.m */; };
+		244A42DA1D9CF138009A622C /* DCTBooleanNotValueTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 24F16B391B4FCD6E00F0589B /* DCTBooleanNotValueTransformer.m */; };
+		244A42DB1D9CF138009A622C /* DCTStringToURLValueTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 247085D81C8DA1FF001A12BF /* DCTStringToURLValueTransformer.m */; };
+		244A42DE1D9CF138009A622C /* DCTValueTransformers.h in Headers */ = {isa = PBXBuildFile; fileRef = 24B0AAB71650E524005D0D60 /* DCTValueTransformers.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		244A42DF1D9CF138009A622C /* DCTStringToNumberValueTransformer.h in Headers */ = {isa = PBXBuildFile; fileRef = 24B0AAC01650E566005D0D60 /* DCTStringToNumberValueTransformer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		244A42E01D9CF138009A622C /* DCTArrayToStringValueTransformer.h in Headers */ = {isa = PBXBuildFile; fileRef = 24C54C5A16BFFD9D00E0ACA6 /* DCTArrayToStringValueTransformer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		244A42E11D9CF138009A622C /* DCTColorValueTransformer.h in Headers */ = {isa = PBXBuildFile; fileRef = 24F16B401B4FD29500F0589B /* DCTColorValueTransformer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		244A42E21D9CF138009A622C /* DCTStringToURLValueTransformer.h in Headers */ = {isa = PBXBuildFile; fileRef = 247085D71C8DA1FF001A12BF /* DCTStringToURLValueTransformer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		244A42E31D9CF138009A622C /* DCTNumberToStringValueTransformer.h in Headers */ = {isa = PBXBuildFile; fileRef = 24B0AAC31650E578005D0D60 /* DCTNumberToStringValueTransformer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		244A42E41D9CF138009A622C /* DCTISO8601ToDateValueTransformer.h in Headers */ = {isa = PBXBuildFile; fileRef = 24B0AAC61650E597005D0D60 /* DCTISO8601ToDateValueTransformer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		244A42E51D9CF138009A622C /* DCTBooleanNotValueTransformer.h in Headers */ = {isa = PBXBuildFile; fileRef = 24F16B381B4FCD6E00F0589B /* DCTBooleanNotValueTransformer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		244A42E61D9CF138009A622C /* DCTTimeIntervalSince1970ToDateValueTransformer.h in Headers */ = {isa = PBXBuildFile; fileRef = 24B0AAC91650E5E1005D0D60 /* DCTTimeIntervalSince1970ToDateValueTransformer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		244A42E71D9CF138009A622C /* NSValueTransformer+DCTValueTransformers.h in Headers */ = {isa = PBXBuildFile; fileRef = 24B0AACC1650E6B9005D0D60 /* NSValueTransformer+DCTValueTransformers.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		246E12CF19A93FBA00780D49 /* DCTStringToNumberValueTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 24B0AAC11650E566005D0D60 /* DCTStringToNumberValueTransformer.m */; };
 		246E12D019A93FBA00780D49 /* DCTArrayToStringValueTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 24C54C5B16BFFD9D00E0ACA6 /* DCTArrayToStringValueTransformer.m */; };
 		246E12D119A93FBA00780D49 /* DCTNumberToStringValueTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 24B0AAC41650E578005D0D60 /* DCTNumberToStringValueTransformer.m */; };
@@ -102,6 +121,7 @@
 		244A42CE1D9CEFB9009A622C /* watchOS Extension.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "watchOS Extension.xcconfig"; sourceTree = "<group>"; };
 		244A42CF1D9CEFB9009A622C /* watchOS Framework.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "watchOS Framework.xcconfig"; sourceTree = "<group>"; };
 		244A42D01D9CEFB9009A622C /* watchOS.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = watchOS.xcconfig; sourceTree = "<group>"; };
+		244A42EC1D9CF138009A622C /* DCTValueTransformers.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DCTValueTransformers.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		246E129E19A93F4600780D49 /* DCTValueTransformers.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DCTValueTransformers.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		246E12B919A93F6200780D49 /* DCTValueTransformers.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DCTValueTransformers.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		246E12ED19A9401100780D49 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -128,6 +148,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		244A42DC1D9CF138009A622C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		246E129A19A93F4600780D49 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -241,6 +268,7 @@
 				246E129E19A93F4600780D49 /* DCTValueTransformers.framework */,
 				246E12B919A93F6200780D49 /* DCTValueTransformers.framework */,
 				2473F3641BC869800075EA00 /* DCTValueTransformers.framework */,
+				244A42EC1D9CF138009A622C /* DCTValueTransformers.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -275,6 +303,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		244A42DD1D9CF138009A622C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				244A42DE1D9CF138009A622C /* DCTValueTransformers.h in Headers */,
+				244A42DF1D9CF138009A622C /* DCTStringToNumberValueTransformer.h in Headers */,
+				244A42E01D9CF138009A622C /* DCTArrayToStringValueTransformer.h in Headers */,
+				244A42E11D9CF138009A622C /* DCTColorValueTransformer.h in Headers */,
+				244A42E21D9CF138009A622C /* DCTStringToURLValueTransformer.h in Headers */,
+				244A42E31D9CF138009A622C /* DCTNumberToStringValueTransformer.h in Headers */,
+				244A42E41D9CF138009A622C /* DCTISO8601ToDateValueTransformer.h in Headers */,
+				244A42E51D9CF138009A622C /* DCTBooleanNotValueTransformer.h in Headers */,
+				244A42E61D9CF138009A622C /* DCTTimeIntervalSince1970ToDateValueTransformer.h in Headers */,
+				244A42E71D9CF138009A622C /* NSValueTransformer+DCTValueTransformers.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		246E129B19A93F4600780D49 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -329,6 +374,24 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		244A42D11D9CF138009A622C /* DCTValueTransformers watchOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 244A42E91D9CF138009A622C /* Build configuration list for PBXNativeTarget "DCTValueTransformers watchOS" */;
+			buildPhases = (
+				244A42D21D9CF138009A622C /* Sources */,
+				244A42DC1D9CF138009A622C /* Frameworks */,
+				244A42DD1D9CF138009A622C /* Headers */,
+				244A42E81D9CF138009A622C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "DCTValueTransformers watchOS";
+			productName = "DCTValueTransformers iOS";
+			productReference = 244A42EC1D9CF138009A622C /* DCTValueTransformers.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		246E129D19A93F4600780D49 /* DCTValueTransformers iOS */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 246E12AE19A93F4700780D49 /* Build configuration list for PBXNativeTarget "DCTValueTransformers iOS" */;
@@ -415,11 +478,19 @@
 				246E129D19A93F4600780D49 /* DCTValueTransformers iOS */,
 				246E12B819A93F6200780D49 /* DCTValueTransformers macOS */,
 				2473F3491BC869800075EA00 /* DCTValueTransformers tvOS */,
+				244A42D11D9CF138009A622C /* DCTValueTransformers watchOS */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		244A42E81D9CF138009A622C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		246E129C19A93F4600780D49 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -444,6 +515,22 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		244A42D21D9CF138009A622C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				244A42D31D9CF138009A622C /* DCTStringToNumberValueTransformer.m in Sources */,
+				244A42D41D9CF138009A622C /* DCTArrayToStringValueTransformer.m in Sources */,
+				244A42D51D9CF138009A622C /* DCTNumberToStringValueTransformer.m in Sources */,
+				244A42D61D9CF138009A622C /* DCTColorValueTransformer.m in Sources */,
+				244A42D71D9CF138009A622C /* DCTISO8601ToDateValueTransformer.m in Sources */,
+				244A42D81D9CF138009A622C /* DCTTimeIntervalSince1970ToDateValueTransformer.m in Sources */,
+				244A42D91D9CF138009A622C /* NSValueTransformer+DCTValueTransformers.m in Sources */,
+				244A42DA1D9CF138009A622C /* DCTBooleanNotValueTransformer.m in Sources */,
+				244A42DB1D9CF138009A622C /* DCTStringToURLValueTransformer.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		246E129919A93F4600780D49 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -495,6 +582,22 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
+		244A42EA1D9CF138009A622C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 244A42CF1D9CEFB9009A622C /* watchOS Framework.xcconfig */;
+			buildSettings = {
+				PRODUCT_NAME = DCTValueTransformers;
+			};
+			name = Debug;
+		};
+		244A42EB1D9CF138009A622C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 244A42CF1D9CEFB9009A622C /* watchOS Framework.xcconfig */;
+			buildSettings = {
+				PRODUCT_NAME = DCTValueTransformers;
+			};
+			name = Release;
+		};
 		246E12AF19A93F4700780D49 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 244A42B41D9CEFB9009A622C /* iOS Framework.xcconfig */;
@@ -564,6 +667,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		244A42E91D9CF138009A622C /* Build configuration list for PBXNativeTarget "DCTValueTransformers watchOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				244A42EA1D9CF138009A622C /* Debug */,
+				244A42EB1D9CF138009A622C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		246E12AE19A93F4700780D49 /* Build configuration list for PBXNativeTarget "DCTValueTransformers iOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
