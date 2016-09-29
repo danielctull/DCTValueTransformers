@@ -347,9 +347,9 @@
 			productReference = 246E129E19A93F4600780D49 /* DCTValueTransformers.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		246E12B819A93F6200780D49 /* DCTValueTransformers OS X */ = {
+		246E12B819A93F6200780D49 /* DCTValueTransformers macOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 246E12C919A93F6300780D49 /* Build configuration list for PBXNativeTarget "DCTValueTransformers OS X" */;
+			buildConfigurationList = 246E12C919A93F6300780D49 /* Build configuration list for PBXNativeTarget "DCTValueTransformers macOS" */;
 			buildPhases = (
 				246E12B419A93F6200780D49 /* Sources */,
 				246E12B519A93F6200780D49 /* Frameworks */,
@@ -360,7 +360,7 @@
 			);
 			dependencies = (
 			);
-			name = "DCTValueTransformers OS X";
+			name = "DCTValueTransformers macOS";
 			productName = "DCTValueTransformers OS X";
 			productReference = 246E12B919A93F6200780D49 /* DCTValueTransformers.framework */;
 			productType = "com.apple.product-type.framework";
@@ -413,7 +413,7 @@
 			projectRoot = "";
 			targets = (
 				246E129D19A93F4600780D49 /* DCTValueTransformers iOS */,
-				246E12B819A93F6200780D49 /* DCTValueTransformers OS X */,
+				246E12B819A93F6200780D49 /* DCTValueTransformers macOS */,
 				2473F3491BC869800075EA00 /* DCTValueTransformers tvOS */,
 			);
 		};
@@ -573,7 +573,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		246E12C919A93F6300780D49 /* Build configuration list for PBXNativeTarget "DCTValueTransformers OS X" */ = {
+		246E12C919A93F6300780D49 /* Build configuration list for PBXNativeTarget "DCTValueTransformers macOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				246E12CA19A93F6300780D49 /* Debug */,
