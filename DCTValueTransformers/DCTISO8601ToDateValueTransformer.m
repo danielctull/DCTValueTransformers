@@ -7,26 +7,20 @@
 //
 
 #import "DCTISO8601ToDateValueTransformer.h"
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wobjc-interface-ivars"
+#pragma clang diagnostic ignored "-Wauto-import"
+#import "ISO8601DateFormatter.h"
+#pragma clang diagnostic pop
 
 @implementation DCTISO8601ToDateValueTransformer
 
-+ (NSISO8601DateFormatter *)RFC3399Formatter {
-	static NSISO8601DateFormatter *RFC3399Formatter;
-	static dispatch_once_t RFC3399FormatterToken;
-	dispatch_once(&RFC3399FormatterToken, ^{
-		RFC3399Formatter = [NSISO8601DateFormatter new];
-		RFC3399Formatter.formatOptions =  NSISO8601DateFormatWithInternetDateTime | NSISO8601DateFormatWithDashSeparatorInDate | NSISO8601DateFormatWithColonSeparatorInTime | NSISO8601DateFormatWithColonSeparatorInTimeZone;
-	});
-	return RFC3399Formatter;
-}
-
-
-+ (NSISO8601DateFormatter *)dateFormatter {
-	static NSISO8601DateFormatter *dateFormatter;
-	static dispatch_once_t dateFormatterToken;
-	dispatch_once(&dateFormatterToken, ^{
-		dateFormatter = [NSISO8601DateFormatter new];
-		dateFormatter.formatOptions =  NSISO8601DateFormatWithInternetDateTime | NSISO8601DateFormatWithDashSeparatorInDate | NSISO8601DateFormatWithColonSeparatorInTime | NSISO8601DateFormatWithColonSeparatorInTimeZone | NSISO8601DateFormatWithSpaceBetweenDateAndTime;
++ (ISO8601DateFormatter *)dateFormatter {
+	static ISO8601DateFormatter *dateFormatter;
+	static dispatch_once_t onceToken;
+	dispatch_once(&onceToken, ^{
+		dateFormatter = [ISO8601DateFormatter new];
+		dateFormatter.includeTime = YES;
 	});
 	return dateFormatter;
 }
@@ -45,13 +39,7 @@
 		return nil;
 	}
 
-	NSDate *date = [[[self class] RFC3399Formatter] dateFromString:value];
-	if (date) {
-		return date;
-	}
-
-	date = [[[self class] dateFormatter] dateFromString:value];
-	return date;
+	return [[[self class] dateFormatter] dateFromString:value];
 }
 
 - (id)reverseTransformedValue:(id)value {
