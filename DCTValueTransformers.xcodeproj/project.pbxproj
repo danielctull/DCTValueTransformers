@@ -184,9 +184,9 @@
 			isa = PBXGroup;
 			children = (
 				244A42AC1D9CEFB9009A622C /* Debug.xcconfig */,
+				244A42C01D9CEFB9009A622C /* Release.xcconfig */,
 				244A42B01D9CEFB9009A622C /* iOS */,
 				244A42B91D9CEFB9009A622C /* macOS */,
-				244A42C01D9CEFB9009A622C /* Release.xcconfig */,
 				244A42C31D9CEFB9009A622C /* tvOS */,
 				244A42CC1D9CEFB9009A622C /* watchOS */,
 			);
